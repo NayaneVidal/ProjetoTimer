@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Projeto Alarme - JavaScript</title>
+    <style>
+        
+
+        .container{
+            text-align: center;
+            height: 500px;
+            
+            
+            
+        }
+
+        button{
+            background: rgb(142, 246, 131);
+            color:white;
+            font-size: 32px;
+            padding:8px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            transition: .5s;
+        
+        }
+
+        button:hover{background-color: rgb(20, 212, 36);}
+       
+        button2{
+            background: rgb(250, 148, 117);
+            color:white;
+            font-size: 32px;
+            padding:8px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: .5s;
+        }
+       
+        button2:hover{background-color: rgb(218, 39, 39);}
+
+        button3{
+            background: rgb(136, 191, 250);
+            color:white;
+            font-size: 32px;
+            padding:8px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: .5s;
+        }
+
+        button3:hover{background-color: rgb(73, 112, 227);}
+
+        select{
+            width: 70px;
+            height: 60px;
+            font-size: 2em;
+            color: black;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+    h4{
+        display: inline-block;
+        margin: 65px 0px 0px 40px;
+        font-family: fantasy;
+        font-weight: 500;
+        
+        
+        
+
+    }
+    
+    
+    </style>
+</head>
+
+<body>
+    <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h4>Horas</h4>
+        <select id="horas" name="hora"></select>
+       
+        <h4>Minutos</h4>
+        <select id="minutos" name="minutos"></select>
+        
+        <h4>Segundos</h4>
+        <select id="segundos" name="segundos"></select>
+       
+
+        <br/>
+        <br/>
+        
+       <div class="botoes">
+        <button id="comecar">Iniciar</button>
+        <button2 id="parar">Pausar</button2>
+        <button3 id="cancelar">Cancelar</button3>
+       </div>
+        
+
+        <div id="display">
+            <h3></h3>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+
+</body>
+
+</html>
